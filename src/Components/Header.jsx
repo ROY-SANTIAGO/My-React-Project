@@ -2,13 +2,13 @@
 function Header(){
     return(
         <header>
-            <nav>
-                <ul>
+            <nav className="nav">
+                <ul className="d-flex flex-column list-unstyled">
                     <h1>Unga Bunga</h1>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Service</a></li>
+                    <a className ="btn btn-success" href="#" role="button">Sign up</a>
+                    <a className ="btn btn-success" href="#" role="button">Log in</a>
+                    <a className ="btn btn-success" href="#" role="button">explore</a>
+                    <a className ="btn btn-success" href="#" role="button">Service</a>
                 </ul>
             </nav>
             <hr />
