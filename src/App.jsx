@@ -1,18 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import ExPlore from './Components/Explore'
-import Header from './Components/Header'
-import Footer from './Components/Footer'
+import Explore from './Components/Explore';
+import Signup from './Components/Signup';
 
 
 function App() {
-
   return (
-    <>
-      <Header/>
-      <ExPlore/>
-      <Footer/>
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Explore/>} />
+          <Route path='/signup' element={<Signup/>} />
+          <Route />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
-export default App
+export default App;

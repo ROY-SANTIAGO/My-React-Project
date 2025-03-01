@@ -1,9 +1,9 @@
+import React from "react";
+import { Link } from "react-router-dom";
 
 function ExPlore (){
     return(
-        <ul>
-            <li></li>
-        </ul>
+        <Link to="/signup">Signup</Link>
     );
 }
 
